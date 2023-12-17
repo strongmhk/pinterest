@@ -138,7 +138,7 @@ USE_TZ = True
 # Static files (CSS, JavaScript, Images)
 # https://docs.djangoproject.com/en/4.2/howto/static-files/
 
-STATIC_URL = "static/"
+STATIC_URL = "/static/"
 
 STATIC_ROOT = os.path.join(BASE_DIR, 'staticfiles')
 
@@ -155,6 +155,6 @@ LOGOUT_REDIRECT_URL = reverse_lazy('accountapp:login')
 DEFAULT_AUTO_FIELD = "django.db.models.BigAutoField"
 
 
-MEDIA_URL = "media/" # localhost:8000/media/test.jpg로 접근하면 해당 소스를 볼 수 있음
+MEDIA_URL = "/media/" # localhost:8000/media/test.jpg로 접근하면 해당 소스를 볼 수 있음
 
 MEDIA_ROOT = os.path.join(BASE_DIR, 'media')
